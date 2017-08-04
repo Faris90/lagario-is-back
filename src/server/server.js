@@ -424,8 +424,8 @@ io.on('connection', function (socket) {
                     masa = c.fireFood;
                 else
                     masa = currentPlayer.cells[i].mass*0.1;
-                currentPlayer.cells[i].mass -= masa;
-                currentPlayer.massTotal -=masa;
+                currentPlayer.cells[i].mass -= 0;
+                currentPlayer.massTotal -= 0;
                 massFood.push({
                     id: currentPlayer.id,
                     num: i,
