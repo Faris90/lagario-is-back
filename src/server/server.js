@@ -131,7 +131,7 @@ function movePlayer(player) {
                 var distance = Math.sqrt(Math.pow(player.cells[j].y-player.cells[i].y,2) + Math.pow(player.cells[j].x-player.cells[i].x,2));
                 var radiusTotal = (player.cells[i].radius + player.cells[j].radius);
                 if(distance < radiusTotal) {
-                    if(player.lastSplit > new Date().getTime() - 1000 * c.mergeTimer + currentPlayer.cells[i].mass*900) {
+                    if(player.lastSplit > new Date().getTime() - 1000 * c.mergeTimer) {
                         if(player.cells[i].x < player.cells[j].x) {
                             player.cells[i].x--;
                         } else if(player.cells[i].x > player.cells[j].x) {
